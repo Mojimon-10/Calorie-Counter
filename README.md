@@ -20,5 +20,5 @@ A simple web-based calorie counter application that allows users to select a res
 
 ## JSON Data Credit
 
-Food dataset source:  
-[[:contentReference[oaicite:0]{index=0}](https://codebeautify.org/jsonviewer/cb2507da38-1525-4faa-a4cf-8f6386d63d8e)](https://codebeautify.org/jsonviewer/cb2507da38-1525-4faa-a4cf-8f6386d63d8e)
+Food dataset source:
+:contentReference[oaicite:0]{index=0}
