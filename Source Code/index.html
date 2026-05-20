@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calorie Counter</h1>
+
+        <!-- Restaurant Dropdown -->
+        <select id="restaurantSelect">
+
+            <option value="">
+                Select Restaurant
+            </option>
+
+        </select>
+        
+        <div class="restaurant-display">
+
+            <img
+                id="restaurantLogo"
+                src=""
+                alt="Restaurant Logo"
+            >
+
+        </div>
+
+        <!-- Food Dropdown -->
+        <select id="foodSelect">
+
+            <option value="">
+                Select Food Item
+            </option>
+
+        </select>
+
+        <!-- Buttons -->
+        <div class="button-group">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+        </div>
+
+        <!-- Message -->
+        <p id="message"></p>
+
+        <!-- Results -->
+        <div
+            class="results-panel"
+            id="resultsPanel"
+        >
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
