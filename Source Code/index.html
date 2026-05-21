@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calorie Counter</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <div class="container">
+    <main class="app-shell">
 
-        <h1>Calorie Counter</h1>
+        <section class="hero">
+            <div class="hero-icon" aria-hidden="true">
+                <svg viewBox="0 0 120 120" class="hero-svg">
+                    <rect x="26" y="14" width="68" height="88" rx="10" />
+                    <rect x="35" y="22" width="50" height="18" rx="4" />
+                    <circle cx="45" cy="53" r="8" />
+                    <circle cx="60" cy="53" r="8" />
+                    <circle cx="75" cy="53" r="8" />
+                    <circle cx="45" cy="70" r="8" />
+                    <circle cx="60" cy="70" r="8" />
+                    <rect x="72" y="63" width="16" height="28" rx="8" />
+                    <path d="M39 88c-7-5-10-12-8-19 2-7 9-13 12-18 2 6 6 10 10 14 5 5 6 11 4 17-2 6-8 11-18 6z" />
+                </svg>
+            </div>
 
-        <!-- Restaurant Dropdown -->
-        <select id="restaurantSelect">
+            <p class="eyebrow">Restaurant calorie tracker</p>
+            <h1>Calories/day</h1>
+            <p class="hero-copy">Choose a restaurant and food item to see the calories.</p>
+        </section>
 
-            <option value="">
-                Select Restaurant
-            </option>
+        <section class="controls">
 
-        </select>
-        
-        <div class="restaurant-display">
+            <div class="field">
+                <label for="restaurantSelect">Restaurant</label>
+                <select id="restaurantSelect">
+                    <option value="">Select Restaurant</option>
+                </select>
+            </div>
 
-            <img
-                id="restaurantLogo"
-                src=""
-                alt="Restaurant Logo"
-            >
+            <div class="restaurant-display">
+                <img id="restaurantLogo" src="" alt="Restaurant Logo">
+            </div>
 
-        </div>
+            <div class="field">
+                <label for="foodSelect">Food Item</label>
+                <select id="foodSelect">
+                    <option value="">Select Food Item</option>
+                </select>
+            </div>
 
-        <!-- Food Dropdown -->
-        <select id="foodSelect">
+            <div class="button-group">
+                <button id="searchBtn" type="button">Search</button>
+                <button id="clearBtn" type="button">Clear</button>
+            </div>
 
-            <option value="">
-                Select Food Item
-            </option>
+            <p id="message"></p>
+        </section>
 
-        </select>
+        <section class="metrics-grid">
+            <article class="metric-card">
+                <span class="metric-label">Restaurant</span>
+                <strong class="metric-value" id="restaurantValue">—</strong>
+            </article>
 
-        <!-- Buttons -->
-        <div class="button-group">
+            <article class="metric-card">
+                <span class="metric-label">Food</span>
+                <strong class="metric-value" id="foodValue">—</strong>
+            </article>
 
-            <button id="searchBtn">
-                Search
-            </button>
+            <article class="metric-card">
+                <span class="metric-label">Calories</span>
+                <strong class="metric-value accent" id="calorieValue">—</strong>
+            </article>
 
-            <button id="clearBtn">
-                Clear
-            </button>
+            <article class="metric-card">
+                <span class="metric-label">Type</span>
+                <strong class="metric-value" id="typeValue">—</strong>
+            </article>
+        </section>
 
-        </div>
-
-        <!-- Message -->
-        <p id="message"></p>
-
-        <!-- Results -->
-        <div
-            class="results-panel"
-            id="resultsPanel"
-        >
-
-        </div>
-
-    </div>
+    </main>
 
     <script src="script.js"></script>
-
 </body>
 </html>
